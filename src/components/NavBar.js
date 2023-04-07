@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function NavBar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-info">
+    <nav className="navbar navbar-expand-lg navbar-dark  ">
       <div className="container">
         <Link to="/" className="navbar-brand">
           My Website

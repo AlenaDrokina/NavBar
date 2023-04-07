@@ -1,8 +1,12 @@
 .navbar {
   display: flex;
   flex-direction: column;
+  background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
 }
 
+.navbar-brand {
+  font-weight: bold;
+}
 @media screen and (min-width: 768px) {
   .navbar {
     flex-direction: row;
