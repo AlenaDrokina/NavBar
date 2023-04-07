@@ -6,7 +6,7 @@ This is a simple Navbar component built with React and Bootstrap. It can be used
 
 To use this component in your React app, follow these steps:
 
-Clone this repository: git clone https://github.com/example/react-navbar.git.
+Clone this repository: git clone https://github.com/AlenaDrokina/NavBar.git
 Navigate to the project directory: cd react-navbar.
 Install dependencies: npm install.
 Run the app: npm start.
