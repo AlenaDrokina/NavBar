@@ -1,42 +1,113 @@
-.navbar {
+nav {
   display: flex;
-  flex-direction: column;
-  background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  position: relative;
+}
+.nav-link {
+  font-weight: 600;
+  transition: color 0.2s ease-in-out;
 }
 
-.navbar-brand {
+ul {
+  display: flex;
+  list-style: none;
+  margin: 20px;
+  padding: 2;
+}
+
+li {
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
   font-weight: bold;
 }
-@media screen and (min-width: 768px) {
-  .navbar {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-  }
-  .container {
-    padding-left: 15px;
-    padding-right: 15px;
+
+@media (max-width: 768px) {
+  nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    /* left: 0; */
+    width: 100px;
+    height: 100%;
+    /* padding: 5px; */
+    padding: 50px 10px 10px;
   }
 
-  .navbar-nav {
+  ul {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+    min-width: 150px;
   }
 
+  li {
+    margin-right: 0;
+    margin-bottom: 10px;
+    text-decoration: none;
+  }
+  a {
+    text-decoration: none;
+  }
   .nav-item {
-    margin-left: 10px;
+    position: relative;
+  }
+  .nav-item .nav-unfold {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+  .nav-item:hover .nav-unfold {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
   }
 }
-
-.navbar .nav-item:hover > .collapse {
-  display: block;
-}
-
-#aboutCollapse {
+.nav-unfold {
   display: none;
   position: absolute;
-  top: 100%;
-  left: 0;
   z-index: 1;
+}
+
+.nav-item:hover .nav-unfold {
+  display: block;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-unfold ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-unfold li {
+  margin: 0;
+}
+
+.nav-unfold a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.nav-unfold a:hover {
+  background-color: #eee;
+  transition: color 0.2s ease-in-out;
+}
+a:hover {
+  background-color: #eee;
+  transition: color 0.4s ease-in-out;
 }
