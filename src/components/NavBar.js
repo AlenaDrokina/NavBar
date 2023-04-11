@@ -1,10 +1,10 @@
 import React from "react";
 import "./NavBar.css";
 
-const NavBar = () => {
+const NavBar = ({ mode }) => {
   return (
     <nav>
-      <ul class="nav">
+      <ul class={"nav " + mode}>
         <li class="nav-item">
           <a class="nav-link text-dark" href="/">
             Home
@@ -29,6 +29,11 @@ const NavBar = () => {
               <li>
                 <a href="/about/team" class="nav-link text-dark">
                   Team
+                </a>
+              </li>
+              <li>
+                <a href="/about/team" class="nav-link text-dark">
+                  Our Work
                 </a>
               </li>
             </ul>

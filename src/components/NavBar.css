@@ -1,10 +1,52 @@
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 30px;
-  position: relative;
+ul.flower {
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
 }
+ul.flower > li:nth-child(2) > div > ul {
+  position: relative;
+  background: red;
+}
+ul.flower > li:nth-child(2) > div > ul > li {
+  position: absolute;
+}
+ul.flower > li:nth-child(2) > div > ul > li:nth-child(1) {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: green;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+ul.flower > li:nth-child(2) > div > ul > li:nth-child(2) {
+  top: 50%;
+  right: 0;
+  transform: translateY(-100%);
+  background: rgb(255, 232, 188);
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+ul.flower > li:nth-child(2) > div > ul > li:nth-child(3) {
+  top: 50%;
+  right: 0;
+  transform: translateX(170%);
+  background: rgb(170, 168, 247);
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+ul.flower > li:nth-child(2) > div > ul > li:nth-child(4) {
+  bottom: 1px;
+  right: 0;
+  transform: translateX(260%);
+  background: rgb(247, 138, 220);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
 .nav-link {
   font-weight: 600;
   transition: color 0.2s ease-in-out;

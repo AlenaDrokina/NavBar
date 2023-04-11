@@ -11,7 +11,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   return (
     <div>
-      <NavBar />
+      <NavBar mode={"flower"} />
 
       <Routes>
         <Route path="/" element={<Home />} />
