@@ -36,6 +36,11 @@ const NavBar = ({ mode }) => {
                   Our Work
                 </a>
               </li>
+              <li>
+                <a href="/about/team" class="nav-link text-dark">
+                  Additional
+                </a>
+              </li>
             </ul>
           </div>
         </li>
